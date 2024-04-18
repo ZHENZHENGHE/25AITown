@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9108984685970956918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cf190e8f17c6b469ec8a30b6c36b1d, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: 
+  guid: ae2f2a7f7f6684848b0e78cabbb786da
+  position: {x: 248, y: 174}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 
+  child: {fileID: 7006194232071489356}
+--- !u!114 &-6041940400048666791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d62eb2dcdfb5b546b4a94748033d189, type: 3}
+  m_Name: BranchDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: awda
+  guid: 25296a44d43c9fe48a2ecab013fd26c3
+  position: {x: 589, y: 384.96002}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 
+  children:
+  - {fileID: -4332288914201650981}
+  nextDialogueIndex: 0
+--- !u!114 &-4332288914201650981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cf190e8f17c6b469ec8a30b6c36b1d, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: qew
+  guid: 460ed82fe8fcbf948a9f785f8f780baf
+  position: {x: 606, y: 529.96}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 
+  child: {fileID: 5046868522599837511}
+--- !u!114 &-3496133919337141191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cf190e8f17c6b469ec8a30b6c36b1d, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: 777
+  guid: 7779eec92ae6de6498bd3da55ebe255c
+  position: {x: 691, y: 288.96002}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 666
+  child: {fileID: -6041940400048666791}
+--- !u!114 &-1887907781612616942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d62eb2dcdfb5b546b4a94748033d189, type: 3}
+  m_Name: BranchDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: DADAWDD
+  guid: 1329db13b62e8d745bd56f91dca80482
+  position: {x: 229, y: 524.96}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 
+  children: []
+  nextDialogueIndex: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01105145a8c88144590c0fd7f19a9960, type: 3}
+  m_Name: New Dialogue Tree
+  m_EditorClassIdentifier: 
+  runningNode: {fileID: 0}
+  treeState: 1
+  nodes:
+  - {fileID: 5663112181336596713}
+  - {fileID: -6041940400048666791}
+  - {fileID: -3496133919337141191}
+  - {fileID: 417107580954372540}
+  - {fileID: -4332288914201650981}
+  - {fileID: 5046868522599837511}
+  - {fileID: -1887907781612616942}
+  - {fileID: 7006194232071489356}
+  - {fileID: -9108984685970956918}
+  - {fileID: 411334483214881008}
+  id: 0
+--- !u!114 &411334483214881008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cf190e8f17c6b469ec8a30b6c36b1d, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: 
+  guid: 73a3d6b6d114ee84e91628f16015c890
+  position: {x: 428, y: 257}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 
+  child: {fileID: 0}
+--- !u!114 &417107580954372540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cf190e8f17c6b469ec8a30b6c36b1d, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: 666
+  guid: e811ab1e3df227a4f9e15ec6620a7fc5
+  position: {x: 686, y: 143.96}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 
+  child: {fileID: -3496133919337141191}
+--- !u!114 &5046868522599837511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cf190e8f17c6b469ec8a30b6c36b1d, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: xxxxxxx
+  guid: 9084040eb96d92a4aab5b6d4df3d124f
+  position: {x: 567, y: 688}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 
+  child: {fileID: 0}
+--- !u!114 &5663112181336596713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d62eb2dcdfb5b546b4a94748033d189, type: 3}
+  m_Name: BranchDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: "\u4F60\u597D"
+  guid: 95c37a3e1ea2e4342b3364b620068314
+  position: {x: 387, y: 26.960007}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 
+  children:
+  - {fileID: 417107580954372540}
+  - {fileID: -9108984685970956918}
+  nextDialogueIndex: 0
+--- !u!114 &7006194232071489356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cf190e8f17c6b469ec8a30b6c36b1d, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  dialogueContent: qew
+  guid: bf3056e859d91f64f811d6899a41fbc2
+  position: {x: 212, y: 333.96002}
+  id: 0
+  rolePosition: 0
+  bg: 0
+  musicBg: 
+  musicFx: 
+  role: 
+  roleAnime: 
+  roleEmo: 
+  state: 1
+  started: 0
+  description: 
+  child: {fileID: -1887907781612616942}

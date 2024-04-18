@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a1607116aebaa22469b2c61d5c3ac4ce
+  m_SerializeEntries:
+  - m_GUID: cd7d41ab5c9a04448bf99cb4237801ea
+    m_Address: Assets/Art/Texture/1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0d47be0fa09d79942b286d7d93a620b8
+    m_Address: Assets/Art/Texture/GameStartBG.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7c986211faa50654bb22db972ca87488
+    m_Address: Assets/Art/Texture/role/wizard.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a9ec191b4fa749745b9088056d71845f
+    m_Address: Assets/Art/Texture/role/warrior.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e6d347e2053fcc2478a81cbd88910f98
+    m_Address: Assets/Art/Texture/role/assassins.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 14ce1115b8bd14b4691793a2d06d97b1
+    m_Address: Assets/Art/Texture/role/warrior2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 10eae5c9a85a4da4e8ae01a53934277f
+    m_Address: Assets/Art/Texture/bg.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 58dbc667258303145aefdbdb4bcc6657
+    m_Address: Assets/Art/Perfab/UI/ChooseHeroPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 322e31658b9d970468a3d10c26946941
+    m_Address: Assets/Art/Perfab/UI/StartPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d083cbe9e1728504f9bac0287db15f6a
+    m_Address: Assets/Art/Texture/bg_fm.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 40543b6be62070a49a4d0375c0a534f5
+    m_Address: Assets/Art/Texture/dikuang_04.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8aeeec6a6446f8d468da3bd692fa2332
+    m_Address: Assets/Art/Perfab/UI/LevelPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 903d5297cbb458d40a7e8c2b7c9dd334
+    m_Address: Assets/Art/Texture/bg_map.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8a0dc6be2c9e262468f600b96cd51b98
+    m_Address: Assets/Art/Texture/bg_paper.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7beac2cbb6007c548b1c56789b2d0de7
+    m_Address: Assets/Art/Texture/bg_kuang.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ba32525effab9a84693c63f441982bee
+    m_Address: Assets/Art/Texture/boss.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 93ea32705a7178449b9658e456da1ac0
+    m_Address: Assets/Art/Texture/box.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9eea258bc05f51d43ad6a0710974bda1
+    m_Address: Assets/Art/Texture/store.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 66cb2e96bbf8338438e77630078ebbb5
+    m_Address: Assets/Art/Texture/fire.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2af6b6588688212498cd9f3ce01f2275
+    m_Address: Assets/Art/Texture/wenhao.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4477fac0c0567014d97f3da1b0c1e29d
+    m_Address: Assets/Art/Texture/normal_monster.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d970e5a8ce266ed48afbc2d465d50435
+    m_Address: Assets/Art/Perfab/UI/BattlePanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 17c44b302856dc5429e5f3c66fb63843
+    m_Address: Assets/Art/Texture/battlebg1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 310abca78b5340f489ad3bcc30520003
+    m_Address: Assets/Art/Perfab/monster.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c6c2d7630fd314346b6d33b2bc90fc23
+    m_Address: Assets/Art/Perfab/role.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a4a0eb16ab39b734ab639d8f267b3a73
+    m_Address: Assets/Art/Perfab/card.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bd807d892bb227a42bdb6abf879ca0ec
+    m_Address: Assets/Art/Perfab/CardShow.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c3d86d2dca901be44850306eb2f34761
+    m_Address: Assets/Art/Perfab/UI/FirePanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc9f38b399d892d4599f1ac1662f5d10
+    m_Address: Assets/Art/Perfab/UI/WinPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 38f79100ac23a274ebeb8f9e4d2f609a
+    m_Address: Assets/Art/Perfab/UI/StorePanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fc8c80e58a58a924b9604c35a8c52eae
+    m_Address: Assets/Art/Perfab/UI/CardGroupPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5fd5b32f295e9bf4991caa3cbfa821c8
+    m_Address: Assets/Art/Texture/bg2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f508f188c2020144ab3d709259ee71fd
+    m_Address: Assets/Art/Texture/bg3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 37da6d21b6c253c419e61036ceb8a9bd
+    m_Address: Assets/Art/Texture/firebg.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d8f8a08a758122d4eaa10b2b1d933613
+    m_Address: Assets/Art/Perfab/h.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6b8536eb39b9379498ca8b0e272cf7ba
+    m_Address: Assets/Art/Perfab/Cube.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c9fc462ce063d384a9a24367fef32f7a
+    m_Address: Assets/Art/Perfab/h (1).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 25427fb8898c68f45a06a9f40814f62d, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 95b8bbbcc5cf3a140a421235afb868da, type: 2}
+    - {fileID: 11400000, guid: 9463f75b25ccf4a48ba5edcdc763d8fb, type: 2}

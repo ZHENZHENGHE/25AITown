@@ -1,0 +1,22 @@
+﻿using System.IO;
+
+namespace BFramework
+{
+    public class __CLASS_NAME__:IRow
+    {
+        __DATA_TABLE_PROPERTIES__
+          
+        public __CLASS_NAME__(BinaryReader binaryReader,int columnNum)
+        {
+            columnNum = columnNum - 1;
+            __FUNC__
+  
+        }
+        public void init(){
+            if (!Config.Type.TryGetValue("__TABLE_NAME__",out var type))
+            {
+                Config.Type.Add("__TABLE_NAME__",typeof(__CLASS_NAME__));
+            }
+        }
+    }
+}

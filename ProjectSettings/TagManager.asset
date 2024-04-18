@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemies
+  - Player_House
+  - IndoorScence01
+  - IndoorScence02
+  - SuperMarket
+  - IndoorScence03
+  - Cafe
+  - Music
+  - ButtonTag
+  - Foods_Canvas
+  - ComfirmPurchaseCanvas
+  - MainCanvas_UI
+  - Coin
+  - CommomUI
+  - PlayerCostManager
+  - restaurant
+  - restaurant_Canvas
+  - TaskText
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - line
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: terrian
+    uniqueID: 2518061317
+    locked: 0
+  - name: river
+    uniqueID: 3388933875
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: character
+    uniqueID: 602600365
+    locked: 0
+  - name: ObjectsOnGround
+    uniqueID: 926790629
+    locked: 0
+  - name: house
+    uniqueID: 893212519
+    locked: 0
+  - name: furniture
+    uniqueID: 2692071833
+    locked: 0
+  - name: line
+    uniqueID: 1885662009
+    locked: 0

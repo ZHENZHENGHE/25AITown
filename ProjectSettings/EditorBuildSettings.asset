@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Terrian.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/EnterGame.unity
+    guid: 0c6fa397e43b39d42a015af4b8f2f119
+  - enabled: 1
+    path: Assets/Scenes/PlayerIndoorScence.unity
+    guid: 61f7ffc75f1411a489f7deef3cc9e4b5
+  - enabled: 1
+    path: Assets/Scenes/IndoorScence01.unity
+    guid: 88681032aa38e4c4997b4b1f9bf0550a
+  - enabled: 1
+    path: Assets/Scenes/IndoorScence02.unity
+    guid: 8c6c927b43671c049890f0b11f281293
+  - enabled: 1
+    path: Assets/Scenes/SuperMarket.unity
+    guid: c5df2797f5f51a04e91ebbc19d631280
+  - enabled: 1
+    path: Assets/Scenes/IndoorScence03.unity
+    guid: c60beee8202cba4449de9340bf177a66
+  - enabled: 1
+    path: Assets/Scenes/developerInformation.unity
+    guid: d99acac294884e648a7d8237b7964a6f
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: f4a8548d9c7ce4441a2f21dcdb320c2a, type: 2}

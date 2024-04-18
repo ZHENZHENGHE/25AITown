@@ -1,0 +1,16 @@
+# ================= #
+# Project generated #
+# ================= #
+.idea
+.vscode
+.vs
+
+/Bundles
+/Library
+/Temp
+/obj
+
+#/Logs
+
+*.sln
+*.csproj
