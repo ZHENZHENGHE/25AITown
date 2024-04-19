@@ -22,6 +22,31 @@ TagManager:
   - restaurant
   - restaurant_Canvas
   - TaskText
+  - neighbor001
+  - neighbor002
+  - neighbor003
+  - neighbor004
+  - neighbor005
+  - neighbor006
+  - neighbor007
+  - neighbor008
+  - neighbor009
+  - neighbor010
+  - neighbor011
+  - neighbor012
+  - neighbor013
+  - neighbor014
+  - neighbor015
+  - neighbor016
+  - neighbor017
+  - neighbor018
+  - neighbor019
+  - neighbor020
+  - neighbor021
+  - neighbor022
+  - neighbor023
+  - neighbor024
+  - neighbor_Canvas
   layers:
   - Default
   - TransparentFX
