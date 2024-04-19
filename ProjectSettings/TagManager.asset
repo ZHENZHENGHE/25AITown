@@ -47,6 +47,7 @@ TagManager:
   - neighbor023
   - neighbor024
   - neighbor_Canvas
+  - neighbor_text
   layers:
   - Default
   - TransparentFX

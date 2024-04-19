@@ -66,6 +66,11 @@ public class ButtonEvent_hzz : MonoBehaviour
     {
         StartCoroutine(OnCloseComfirmPurchaseFoodsBtn2_IE());
     }
+    //关闭neighbor对话canvas
+    public void OnCloseNeighborCanvas()
+    {
+        StartCoroutine(OnCloseNeighborCanvas_IE());
+    }
     //选择食物
     public void OnChooseFoods(int cost)
     {
@@ -108,24 +113,31 @@ public class ButtonEvent_hzz : MonoBehaviour
         StartCoroutine(OnCloseTaskCanvas_IE());
     }
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    IEnumerator OnCloseNeighborCanvas_IE()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Canvas canvas = GameObject.FindWithTag("neighbor_Canvas").GetComponent<Canvas>();
+        canvas.gameObject.SetActive(false);
+        // Time.timeScale = 1f; // 将时间缩放比例设为1，恢复游戏
+    }
     IEnumerator OnCloseTaskCanvas_IE()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         TaskCanvas.SetActive(false);
     }
     IEnumerator OnOpenTaskCanvas_IE()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         TaskCanvas.SetActive(true);
     }
     IEnumerator OnCloseComfirmPurchaseFoodsBtn2_IE()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         ComfirmPurchaseCanvas.SetActive(false);
     }
     IEnumerator OnCloseFoodsCavasBtn_IE()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         Canvas canvas = GameObject.FindWithTag("Foods_Canvas").GetComponent<Canvas>();
         canvas.gameObject.SetActive(false);
         CollisionHandler scripts = GameObject.FindWithTag("Player").GetComponent<CollisionHandler>();
@@ -133,7 +145,7 @@ public class ButtonEvent_hzz : MonoBehaviour
     }
     IEnumerator OnCloseRestaurantCavasBtn_IE()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         Canvas canvas = GameObject.FindWithTag("restaurant_Canvas").GetComponent<Canvas>();
         canvas.gameObject.SetActive(false);
         CollisionHandler scripts = GameObject.FindWithTag("Player").GetComponent<CollisionHandler>();
@@ -141,7 +153,7 @@ public class ButtonEvent_hzz : MonoBehaviour
     }
     IEnumerator OnCloseComfirmPurchaseFoodsBtn_IE()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         ComfirmPurchaseCanvas.SetActive(false);
         GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
         PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
@@ -150,7 +162,7 @@ public class ButtonEvent_hzz : MonoBehaviour
     }
     IEnumerator OnChooseFoods_IE(int cost)
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
         PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
         script.Food_Cost = cost;
@@ -158,19 +170,19 @@ public class ButtonEvent_hzz : MonoBehaviour
     }
     IEnumerator WaitforClickMusic()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         SceneManager.LoadScene("developerInformation");
     }
     IEnumerator WaitforEnterGame()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         SceneManager.LoadScene("EnterGame");
 
     }
 
     IEnumerator WaitforReturnHome()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         SceneManager.LoadScene("EnterGame");
 
     }
