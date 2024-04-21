@@ -15,9 +15,9 @@ public class CollisionHandler : MonoBehaviour
     void Start()
     {
         // MainCavas_UI.SetActive(true);
-        if(Foods_Cavas)Foods_Cavas.SetActive(false);
-        if(restaurant_Cavas)restaurant_Cavas.SetActive(false);
-        if(neighbor_Canvas)neighbor_Canvas.SetActive(false);
+        if (Foods_Cavas) Foods_Cavas.SetActive(false);
+        if (restaurant_Cavas) restaurant_Cavas.SetActive(false);
+        if (neighbor_Canvas) neighbor_Canvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -213,11 +213,25 @@ public class CollisionHandler : MonoBehaviour
             neighbor_text.text = "Ella - 一位自由心灵的旅行家，她探索世界各地的文化和风景";
             // Time.timeScale = 0f; // 将时间缩放比例设为0，暂停游戏
         }
+        if (collision.gameObject.CompareTag("neighbor021"))
+        {
+            neighbor_Canvas.SetActive(true);
+            Text neighbor_text = GameObject.FindWithTag("neighbor_text").GetComponent<Text>();
+            neighbor_text.text = "        Sophia - 一位富有同情心的社工，致力于帮助弱势群体改善生活";
+            // Time.timeScale = 0f; // 将时间缩放比例设为0，暂停游戏
+        }
         if (collision.gameObject.CompareTag("neighbor022"))
         {
             neighbor_Canvas.SetActive(true);
             Text neighbor_text = GameObject.FindWithTag("neighbor_text").GetComponent<Text>();
             neighbor_text.text = "Noah - 一个有创造力的厨师，喜欢研究和创作美味的料理";
+            // Time.timeScale = 0f; // 将时间缩放比例设为0，暂停游戏
+        }
+        if (collision.gameObject.CompareTag("neighbor023"))
+        {
+            neighbor_Canvas.SetActive(true);
+            Text neighbor_text = GameObject.FindWithTag("neighbor_text").GetComponent<Text>();
+            neighbor_text.text = "Liam - 一个热爱户外运动的冒险家，喜欢徒步旅行和攀登高峰";
             // Time.timeScale = 0f; // 将时间缩放比例设为0，暂停游戏
         }
     }

@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/IndoorScence02.unity
     guid: 8c6c927b43671c049890f0b11f281293
   - enabled: 1
-    path: Assets/Scenes/SuperMarket_X.unity
+    path: Assets/Scenes/SuperMarket.unity
     guid: c5df2797f5f51a04e91ebbc19d631280
   - enabled: 1
     path: Assets/Scenes/IndoorScence03.unity
