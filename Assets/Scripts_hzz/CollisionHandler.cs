@@ -11,6 +11,8 @@ public class CollisionHandler : MonoBehaviour
     public GameObject Foods_Cavas;
     public GameObject restaurant_Cavas;
     public GameObject neighbor_Canvas;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -234,6 +236,14 @@ public class CollisionHandler : MonoBehaviour
             neighbor_text.text = "Liam - 一个热爱户外运动的冒险家，喜欢徒步旅行和攀登高峰";
             // Time.timeScale = 0f; // 将时间缩放比例设为0，暂停游戏
         }
+        if (collision.gameObject.CompareTag("neighbor024"))
+        {
+            neighbor_Canvas.SetActive(true);
+            Text neighbor_text = GameObject.FindWithTag("neighbor_text").GetComponent<Text>();
+            neighbor_text.text = "Lily - 一位热爱美食的美食家，对各种口味和烹饪技巧都有深入的了解。她喜欢探索不同的菜系和食材，以创造出独特的美食体验";
+            // Time.timeScale = 0f; // 将时间缩放比例设为0，暂停游戏
+        }
+
     }
     // void OnCollisionEnter(Collision2D collision)
     // {
