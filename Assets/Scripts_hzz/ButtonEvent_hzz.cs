@@ -83,7 +83,11 @@ public class ButtonEvent_hzz : MonoBehaviour
         TextMeshProUGUI TextMeshPro = GameObject.FindWithTag("TaskText").GetComponent<TextMeshProUGUI>();
         if (index == 1)
         {
-            TextMeshPro.text = "text01";
+            if (PlayerPrefs.GetInt("TaskOne") == 0)
+            {
+                TextMeshPro.text = "任务已完成！";
+            }
+            else TextMeshPro.text = "快去认识小镇中的居民吧！靠近小镇中的居民你将会获得他们的人物详细信息，每认识一位居民将获得5金币的奖励！";
         }
         if (index == 2)
         {

@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class hzz_PlayerPrefs : MonoBehaviour
 {
     private const string PlayerPositionKey = "PlayerPosition";
     private const string PlayerCoin = "PlayerCoin";
+    private const string TaskOne = "TaskOne";
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +20,19 @@ public class hzz_PlayerPrefs : MonoBehaviour
             Vector3 position = StringToVector3(savedPosition);
             transform.position = position;
         }
+        //保存用户金币的数据
         if (PlayerPrefs.HasKey(PlayerCoin))
         {
             int cost = PlayerPrefs.GetInt(PlayerCoin);
             GameObject coinButton = GameObject.FindWithTag("Coin");
             TextMeshProUGUI cointext = coinButton.GetComponent<TextMeshProUGUI>();
             cointext.text = cost.ToString();
+        }
+        //保存用户第一次任务的数据
+        if (!PlayerPrefs.HasKey(TaskOne))
+        {
+            PlayerPrefs.SetInt(TaskOne, 1);
+            PlayerPrefs.Save();
         }
     }
     private void OnDestroy()
@@ -60,5 +69,7 @@ public class hzz_PlayerPrefs : MonoBehaviour
         TextMeshProUGUI cointext = coinButton.GetComponent<TextMeshProUGUI>();
         int coin = int.Parse(cointext.text);
         PlayerPrefs.SetInt(PlayerCoin, coin);
+        PlayerPrefs.Save();
+
     }
 }

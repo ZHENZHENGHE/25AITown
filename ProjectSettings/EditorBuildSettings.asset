@@ -24,10 +24,13 @@ EditorBuildSettings:
     path: Assets/Scenes/SuperMarket.unity
     guid: c5df2797f5f51a04e91ebbc19d631280
   - enabled: 1
-    path: Assets/Scenes/IndoorScence03.unity
+    path: Assets/Scenes/IndoorScence03_x.unity
     guid: c60beee8202cba4449de9340bf177a66
   - enabled: 1
     path: Assets/Scenes/developerInformation.unity
     guid: d99acac294884e648a7d8237b7964a6f
+  - enabled: 1
+    path: Assets/Scenes/IndoorScence03.unity
+    guid: 5f42b1d25394ed542a214259b67197fc
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f4a8548d9c7ce4441a2f21dcdb320c2a, type: 2}
