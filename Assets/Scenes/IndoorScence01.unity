@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49335247}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.030701, y: 0.22286916, z: -9.989006}
+  m_LocalPosition: {x: 11.034677, y: 0.22287536, z: -9.989006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3042,7 +3042,6 @@ GameObject:
   - component: {fileID: 1967374814}
   - component: {fileID: 1967374813}
   - component: {fileID: 1967374812}
-  - component: {fileID: 1967374811}
   - component: {fileID: 1967374810}
   m_Layer: 0
   m_Name: neighbor_Canvas
@@ -3087,19 +3086,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1967374811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967374808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 850705c44c9e63148a91bf82cc081bec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickSound: {fileID: 0}
 --- !u!114 &1967374812
 MonoBehaviour:
   m_ObjectHideFlags: 0
