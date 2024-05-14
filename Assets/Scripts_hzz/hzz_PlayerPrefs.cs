@@ -8,7 +8,9 @@ public class hzz_PlayerPrefs : MonoBehaviour
 {
     private const string PlayerPositionKey = "PlayerPosition";
     private const string PlayerCoin = "PlayerCoin";
+    private const string PlayerLife = "PlayerLife";
     private const string TaskOne = "TaskOne";
+    private float timer = 0f; // 计时器
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,14 @@ public class hzz_PlayerPrefs : MonoBehaviour
             GameObject coinButton = GameObject.FindWithTag("Coin");
             TextMeshProUGUI cointext = coinButton.GetComponent<TextMeshProUGUI>();
             cointext.text = cost.ToString();
+        }
+        //保存用户金币的数据
+        if (PlayerPrefs.HasKey(PlayerLife))
+        {
+            int life_number = PlayerPrefs.GetInt(PlayerLife);
+            GameObject lifeButton = GameObject.FindWithTag("LifeNumber");
+            TextMeshProUGUI lifetext = lifeButton.GetComponent<TextMeshProUGUI>();
+            lifetext.text = life_number.ToString();
         }
         //保存用户第一次任务的数据
         if (!PlayerPrefs.HasKey(TaskOne))
@@ -70,6 +80,29 @@ public class hzz_PlayerPrefs : MonoBehaviour
         int coin = int.Parse(cointext.text);
         PlayerPrefs.SetInt(PlayerCoin, coin);
         PlayerPrefs.Save();
+        //保存用户生命值
+        GameObject lifeButton = GameObject.FindWithTag("LifeNumber");
+        TextMeshProUGUI lifetext = lifeButton.GetComponent<TextMeshProUGUI>();
+        int life_number = int.Parse(lifetext.text);
+        // 每隔1分钟，生命值减一
+        timer += Time.deltaTime;
+        if (timer >= 60f) // 60秒 = 1分钟
+        {
+            timer = 0f; // 重置计时器
 
+            if (life_number > 0)
+            {
+                life_number--; // 生命值减一
+                lifetext.text=life_number.ToString();
+                Debug.Log("当前生命值：" + life_number);
+            }
+            else
+            {
+                Debug.Log("玩家已死亡！");
+                // 在这里可以触发玩家死亡逻辑，例如游戏结束、重置场景等
+            }
+        }
+        PlayerPrefs.SetInt(PlayerLife, life_number);
+        PlayerPrefs.Save();
     }
 }

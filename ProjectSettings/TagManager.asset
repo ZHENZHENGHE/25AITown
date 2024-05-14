@@ -49,6 +49,7 @@ TagManager:
   - neighbor_Canvas
   - neighbor_text
   - CommonTipsCanvas
+  - LifeNumber
   layers:
   - Default
   - TransparentFX
