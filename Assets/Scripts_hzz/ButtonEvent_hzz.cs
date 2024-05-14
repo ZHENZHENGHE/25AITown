@@ -72,9 +72,13 @@ public class ButtonEvent_hzz : MonoBehaviour
         StartCoroutine(OnCloseNeighborCanvas_IE());
     }
     //选择食物
-    public void OnChooseFoods(int cost)
+    public void OnChooseFood(int cost)
     {
         StartCoroutine(OnChooseFoods_IE(cost));
+    }
+    public void OnChooseFood_life(int life)
+    {
+        StartCoroutine(OnChooseFoods_life_IE(life));
     }
     //任务
     public void OnTaskSet(int index)
@@ -171,6 +175,13 @@ public class ButtonEvent_hzz : MonoBehaviour
         PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
         script.Food_Cost = cost;
         ComfirmPurchaseCanvas.SetActive(true);
+    }
+    IEnumerator OnChooseFoods_life_IE(int life)
+    {
+        yield return new WaitForSeconds(0.4f);
+        GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+        PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+        script.life_number = life;
     }
     IEnumerator WaitforClickMusic()
     {
