@@ -43,12 +43,26 @@ public class CollisionHandler : MonoBehaviour
         if (collision.gameObject.CompareTag("IndoorScence01"))
         {
             Debug.Log("Enter_IndoorScence01");
+            if (PlayerPrefs.GetInt("TaskTwo") == 1)
+            {
+                GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+                PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+                script.TaskTwoReward();
+                PlayerPrefs.SetInt("TaskTwo", 0);
+            }
             SceneTransition sceneTransition = FindObjectOfType<SceneTransition>();
             sceneTransition.FadeToScene("IndoorScence01");
         }
         if (collision.gameObject.CompareTag("IndoorScence02"))
         {
             Debug.Log("Enter_IndoorScence02");
+            if (PlayerPrefs.GetInt("TaskThree") == 1)
+            {
+                GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+                PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+                script.TaskThreeReward();
+                PlayerPrefs.SetInt("TaskThree", 0);
+            }
             SceneTransition sceneTransition = FindObjectOfType<SceneTransition>();
             sceneTransition.FadeToScene("IndoorScence02");
         }
@@ -69,11 +83,25 @@ public class CollisionHandler : MonoBehaviour
         {
             MainCavas_UI.SetActive(false);
             Foods_Cavas.SetActive(true);
+            if (PlayerPrefs.GetInt("TaskFour") == 1)
+            {
+                GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+                PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+                script.TaskFourReward();
+                PlayerPrefs.SetInt("TaskFour", 0);
+            }
         }
         if (collision.gameObject.CompareTag("restaurant"))
         {
             MainCavas_UI.SetActive(false);
             restaurant_Cavas.SetActive(true);
+            if (PlayerPrefs.GetInt("TaskFive") == 1)
+            {
+                GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+                PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+                script.TaskFiveReward();
+                PlayerPrefs.SetInt("TaskFive", 0);
+            }
         }
         if (collision.gameObject.CompareTag("neighbor001"))
         {

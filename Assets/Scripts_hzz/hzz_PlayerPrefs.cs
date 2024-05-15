@@ -10,6 +10,10 @@ public class hzz_PlayerPrefs : MonoBehaviour
     private const string PlayerCoin = "PlayerCoin";
     private const string PlayerLife = "PlayerLife";
     private const string TaskOne = "TaskOne";
+    private const string TaskTwo = "TaskTwo";
+    private const string TaskThree = "TaskThree";
+    private const string TaskFour = "TaskFour";
+    private const string TaskFive = "TaskFive";
     private float timer = 0f; // 计时器
     // Start is called before the first frame update
     void Start()
@@ -42,6 +46,30 @@ public class hzz_PlayerPrefs : MonoBehaviour
         if (!PlayerPrefs.HasKey(TaskOne))
         {
             PlayerPrefs.SetInt(TaskOne, 1);
+            PlayerPrefs.Save();
+        }
+        //保存用户第二次任务的数据
+        if (!PlayerPrefs.HasKey(TaskTwo))
+        {
+            PlayerPrefs.SetInt(TaskTwo, 1);
+            PlayerPrefs.Save();
+        }
+        //保存用户第三次任务的数据
+        if (!PlayerPrefs.HasKey(TaskThree))
+        {
+            PlayerPrefs.SetInt(TaskThree, 1);
+            PlayerPrefs.Save();
+        }
+        //保存用户第四次任务的数据
+        if (!PlayerPrefs.HasKey(TaskFour))
+        {
+            PlayerPrefs.SetInt(TaskFour, 1);
+            PlayerPrefs.Save();
+        }
+        //保存用户第五次任务的数据
+        if (!PlayerPrefs.HasKey(TaskFive))
+        {
+            PlayerPrefs.SetInt(TaskFive, 1);
             PlayerPrefs.Save();
         }
     }
@@ -93,7 +121,7 @@ public class hzz_PlayerPrefs : MonoBehaviour
             if (life_number > 0)
             {
                 life_number--; // 生命值减一
-                lifetext.text=life_number.ToString();
+                lifetext.text = life_number.ToString();
                 Debug.Log("当前生命值：" + life_number);
             }
             else
