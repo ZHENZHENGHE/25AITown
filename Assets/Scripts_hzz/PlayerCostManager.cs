@@ -7,6 +7,7 @@ public class PlayerCostManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public int Food_Cost = 0;
+    public int Mushroom = 0;
     public int life_number = 0;
     private int _taskOneReward = 50;
     private int _taskTwoReward = 50;
@@ -48,6 +49,18 @@ public class PlayerCostManager : MonoBehaviour
             }
         }
         life_number_text.text = _intValue.ToString();
+    }
+    public void PickMushroom()
+    {
+        //采集蘑菇金币增加操作
+        GameObject coinButton = GameObject.FindWithTag("Coin");
+        TextMeshProUGUI cointext = coinButton.GetComponent<TextMeshProUGUI>();
+
+        if (int.TryParse(cointext.text, out int intValue))
+        {
+            intValue += Mushroom;
+        }
+        cointext.text = intValue.ToString();
     }
     public void TaskOneReward()
     {

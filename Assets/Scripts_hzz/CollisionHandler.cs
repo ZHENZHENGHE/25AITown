@@ -103,6 +103,60 @@ public class CollisionHandler : MonoBehaviour
                 PlayerPrefs.SetInt("TaskFive", 0);
             }
         }
+        if (collision.gameObject.CompareTag("mushroom01"))
+        {
+            GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+            PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+            script.Mushroom = 5;
+            script.PickMushroom();
+            // 销毁碰撞的蘑菇物体
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("mushroom02"))
+        {
+            GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+            PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+            script.Mushroom = 6;
+            script.PickMushroom();
+            // 销毁碰撞的蘑菇物体
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("mushroom03"))
+        {
+            GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+            PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+            script.Mushroom = 7;
+            script.PickMushroom();
+            // 销毁碰撞的蘑菇物体
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("mushroom04"))
+        {
+            GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+            PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+            script.Mushroom = 8;
+            script.PickMushroom();
+            // 销毁碰撞的蘑菇物体
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("mushroom05"))
+        {
+            GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+            PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+            script.Mushroom = 9;
+            script.PickMushroom();
+            // 销毁碰撞的蘑菇物体
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("mushroom06"))
+        {
+            GameObject CostManager_Scripts = GameObject.FindWithTag("PlayerCostManager");
+            PlayerCostManager script = CostManager_Scripts.GetComponent<PlayerCostManager>();
+            script.Mushroom = 10;
+            script.PickMushroom();
+            // 销毁碰撞的蘑菇物体
+            Destroy(collision.gameObject);
+        }
         if (collision.gameObject.CompareTag("neighbor001"))
         {
             neighbor_Canvas.SetActive(true);

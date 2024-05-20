@@ -50,6 +50,12 @@ TagManager:
   - neighbor_text
   - CommonTipsCanvas
   - LifeNumber
+  - mushroom01
+  - mushroom02
+  - mushroom03
+  - mushroom04
+  - mushroom05
+  - mushroom06
   layers:
   - Default
   - TransparentFX
