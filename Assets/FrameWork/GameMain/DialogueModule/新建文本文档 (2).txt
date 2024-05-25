@@ -1,6 +1,0 @@
-todo
-复制粘贴撤销
-runningNode动态设置
-写插件统一修改scriptobj
- 改写update用事件
-重写生命周期方法

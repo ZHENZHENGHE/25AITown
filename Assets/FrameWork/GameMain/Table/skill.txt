@@ -1,5 +1,0 @@
-key	name	num	attack
-int	string	int	int
-1	火球	1	10
-2	风暴	1	30
-3	治疗	2	

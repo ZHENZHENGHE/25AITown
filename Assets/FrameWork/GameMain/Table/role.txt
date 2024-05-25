@@ -1,5 +1,0 @@
-key	name	hp	def	png
-int	string	int	int	string
-1	wizard	50	2	wizard
-2	warrior	60	3	warrior
-3	assassins	30	1	assassins

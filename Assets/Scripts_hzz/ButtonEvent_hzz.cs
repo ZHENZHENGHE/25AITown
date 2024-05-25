@@ -84,46 +84,46 @@ public class ButtonEvent_hzz : MonoBehaviour
     public void OnTaskSet(int index)
     {
         ComfirmPurchaseCanvas.SetActive(true);
-        TextMeshProUGUI TextMeshPro = GameObject.FindWithTag("TaskText").GetComponent<TextMeshProUGUI>();
+        Text Text = GameObject.FindWithTag("TaskText").GetComponent<Text>();
         if (index == 1)
         {
             if (PlayerPrefs.GetInt("TaskOne") == 0)
             {
-                TextMeshPro.text = "任务已完成！";
+                Text.text = "任务已完成！";
             }
-            else TextMeshPro.text = "快去认识小镇中的居民吧！靠近小镇中的居民你将会获得他们的人物详细信息，认识一位居民将获得50金币的奖励！";
+            else Text.text = "快去认识小镇中的居民吧！靠近小镇中的居民你将会获得他们的人物详细信息，认识一位居民将获得50金币的奖励！";
         }
         if (index == 2)
         {
             if (PlayerPrefs.GetInt("TaskTwo") == 0)
             {
-                TextMeshPro.text = "任务已完成！";
+                Text.text = "任务已完成！";
             }
-            else TextMeshPro.text = "Noah是我们这里有名的厨师，拜访他的住所并与他交流可以获得50金币的奖励！";
+            else Text.text = "Noah是我们这里有名的厨师，拜访他的住所并与他交流可以获得50金币的奖励！";
         }
         if (index == 3)
         {
             if (PlayerPrefs.GetInt("TaskThree") == 0)
             {
-                TextMeshPro.text = "任务已完成！";
+                Text.text = "任务已完成！";
             }
-            else TextMeshPro.text = "Liam是小镇有名的冒险家，拜访她的住所并与她交流可以获得50金币的奖励！";
+            else Text.text = "Liam是小镇有名的冒险家，拜访她的住所并与她交流可以获得50金币的奖励！";
         }
         if (index == 4)
         {
             if (PlayerPrefs.GetInt("TaskFour") == 0)
             {
-                TextMeshPro.text = "任务已完成！";
+                Text.text = "任务已完成！";
             }
-            else TextMeshPro.text = "小镇新开了一家很好喝的咖啡店哦，快去看看吧，完成任务可以获得60金币的奖励！";
+            else Text.text = "小镇新开了一家很好喝的咖啡店哦，快去看看吧，完成任务可以获得60金币的奖励！";
         }
         if (index == 5)
         {
             if (PlayerPrefs.GetInt("TaskFive") == 0)
             {
-                TextMeshPro.text = "任务已完成！";
+                Text.text = "任务已完成！";
             }
-            else TextMeshPro.text = "小镇有一家百年老饭店，里面的食物都非常可口，购买食物后生命值将有所提升，快去看看吧！完成任务将获得60金币哦！";
+            else Text.text = "小镇有一家百年老饭店，里面的食物都非常可口，购买食物后生命值将有所提升，快去看看吧！完成任务将获得60金币哦！";
         }
     }
     //打开任务面板

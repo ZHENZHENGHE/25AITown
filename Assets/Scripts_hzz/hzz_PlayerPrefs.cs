@@ -114,20 +114,31 @@ public class hzz_PlayerPrefs : MonoBehaviour
         int life_number = int.Parse(lifetext.text);
         // 每隔1分钟，生命值减一
         timer += Time.deltaTime;
-        if (timer >= 60f) // 60秒 = 1分钟
+        if (timer >= 60f) 
         {
-            timer = 0f; // 重置计时器
-
+            timer = 0f; 
+            life_number--; 
             if (life_number > 0)
             {
-                life_number--; // 生命值减一
                 lifetext.text = life_number.ToString();
                 Debug.Log("当前生命值：" + life_number);
             }
             else
             {
                 Debug.Log("玩家已死亡！");
-                // 在这里可以触发玩家死亡逻辑，例如游戏结束、重置场景等
+                // 触发玩家死亡逻辑，例如游戏结束、重置场景等
+
+                // 清除所有的 PlayerPrefs
+                PlayerPrefs.DeleteAll();
+                PlayerPrefs.Save();
+
+                // 退出游戏
+                Application.Quit();
+
+                // 如果在编辑器中运行，停止播放模式
+#if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+#endif
             }
         }
         PlayerPrefs.SetInt(PlayerLife, life_number);

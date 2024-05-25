@@ -1,9 +1,0 @@
-key	name	attack	hp	def	png
-int	string	int	int	int	string
-1	怪物A	10	50	2	assassins
-2	怪物B	15	60	3	assassins
-3	怪物C	8	30	1	assassins
-4	怪物D	9	80	4	assassins
-5	怪物E	15	40	2	assassins
-6	怪物F	16	20	3	assassins
-7	怪物G	5	20	2	assassins

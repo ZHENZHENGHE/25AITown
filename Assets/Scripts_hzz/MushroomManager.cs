@@ -11,7 +11,7 @@ public class MushroomManager : MonoBehaviour
     public GameObject mushroom04; // 要生成的GameObject
     public GameObject mushroom05; // 要生成的GameObject
     public GameObject mushroom06; // 要生成的GameObject
-    public float spawnInterval = 3f; // 生成间隔时间（15分钟）
+    public float spawnInterval = 60f; // 生成间隔时间（10分钟）
     public Vector2 spawnAreaMin; // 生成区域的最小坐标
     public Vector2 spawnAreaMax; // 生成区域的最大坐标
     void Start()
@@ -27,7 +27,20 @@ public class MushroomManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // 检测是否按下了 Escape 键
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // 打印调试信息
+            Debug.Log("玩家按下了 Esc 键，游戏即将退出。");
 
+            // 退出游戏
+            Application.Quit();
+
+            // 如果在编辑器中运行，停止播放模式
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        }
     }
     private IEnumerator SpawnObjectRoutine01()
     {
